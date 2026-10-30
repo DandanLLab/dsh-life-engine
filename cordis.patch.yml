@@ -1,0 +1,4 @@
+- insert:
+    - id: life-engine
+      name: ./index.js
+      config: {}
