@@ -49,4 +49,13 @@ cordis.patch.yml 的 config 段设置 `workspace` 路径即可，其他全有默
 - Chain-of-Verification (CoVe)
 - Theory of Mind perspective-taking
 
+## 组件化使用
+
+本引擎已作为内置组件并入 [DandanLLab/dsh-channel-qq](https://github.com/DandanLLab/dsh-channel-qq)
+（v0.2.0 起）：装 channel-qq 即自带本引擎，config.lifeEngine.enabled: false 可关。
+身份/家族/KB 路径在组件模式下从 <dshHome>/tongling-life/config.json 热读
+（agentName / familyPeers / familyMap / kbCli / embedUrl）。
+
+独立使用本仓库的方式不变（cordis.patch.yml 单插件挂载）。
+
 MIT License
